@@ -34,7 +34,7 @@ const Header = () => {
         />
       </Badge.Anchor>
       <div className="flex-expand" />
-      <a title="check me out on github">
+      <a href="https://github.com/jmfairlie/about-movies" target="_blank" title="check me out on github">
         <Github className="github-link" size={36} />
       </a>
     </div>
