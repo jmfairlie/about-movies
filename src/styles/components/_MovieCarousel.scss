@@ -1,0 +1,31 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+
+$-color: var(--primary);
+
+div.carousel-container {
+  margin-bottom: 25px;
+  position: relative;
+  text-align: left;
+  h1 {
+    color: var(--primary);
+    text-shadow: 1px -1px 5px var(--contrast2);
+    text-transform: capitalize;
+    font-family: 'Pacifico', cursive;
+    & > span {
+      color: var(--contrast);
+      font-family: sans-serif;
+      text-shadow: none;
+    }
+  }
+
+  .slick-prev:before, .slick-next:before {
+    font-size: 40px;
+  }
+  ul.slick-dots {
+   li:before {
+      color: transparent;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "OMDB": {
+    "URL" : "https://www.omdbapi.com",
+    "API_KEY" : "c07f329"
+  },
+  "TMDB": {
+    "BASE_URL": "https://api.themoviedb.org",
+    "AUTH": {
+      "v3": "af8a221899782d295e672ee4c481357b",
+      "v4": "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJhZjhhMjIxODk5NzgyZDI5NWU2NzJlZTRjNDgxMzU3YiIsInN1YiI6IjYzYzljNTYwMDM5OGFiMDBhZjA1ZjE4MyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.1vjhtChpfZIrmNwkVeXiFNIcPBa_r7r-7Yab_BLTDR8"
+    }
+  }
+}

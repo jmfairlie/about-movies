@@ -1,0 +1,39 @@
+@use "abstracts";
+@use "components";
+@use "vendors";
+
+* {
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  margin: 0;
+  position: relative;
+  height: 100vh;
+  font-size: var(--font-size);
+  background-image: linear-gradient(to right, var(--primary) , var(--contrast));
+
+  div#root {
+    position: relative;
+    height: 100vh;
+    overflow-y: hidden;
+  }
+
+  .error-message {
+    background: white;
+    max-width: 50vw;
+    max-height: 50vh;
+    overflow-y: auto;
+    text-align: left;
+
+    .error-header {
+      padding: 20px;
+      background-color: var(--error);
+    }
+
+    .error-object {
+      padding: 20px;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.flex-row {
+  display: flex;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-expand {
+  flex: 1 1 0;
+}
+
+.transform-center-x {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.transform-center-y {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.transform-center-xy {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.max-width {
+  max-width: 1200px;
+}

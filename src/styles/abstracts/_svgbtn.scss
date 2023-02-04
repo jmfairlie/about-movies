@@ -1,0 +1,32 @@
+$-icon-color: rgba(black, 0.2);
+$-icon-color-hover: rgba(black, 0.6);
+
+@mixin svg-style($color: $-icon-color, $hoverColor: $-icon-color-hover) {
+  svg.open-icon, svg.add-icon {
+
+    &:not(.disabled) {
+      cursor: pointer;
+    }
+
+    height: 100%;
+    path.eye_svg__st0 {
+      fill: $color;
+    }
+
+    path.add-cart_svg__primary-upstroke,  path.add-cart_svg__primary-upstroke-2, path.add-cart_svg__primary, path.add-cart_svg__primary-2 {
+      stroke: $color;
+      fill: none;
+    }
+  }
+}
+
+@mixin svg-style-hover($hoverColor: $-icon-color-hover) {
+  svg.open-icon:hover, svg.add-icon:not(.disabled):hover {
+    path.add-cart_svg__primary-upstroke,  path.add-cart_svg__primary-upstroke-2, path.add-cart_svg__primary, path.add-cart_svg__primary-2 {
+      stroke: $hoverColor;
+    }
+    path.eye_svg__st0 {
+      fill: $hoverColor;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+$-bg: url('../assets/war.png');
+
+@mixin content {
+  &.war {
+    --primary: #1a7f0f;
+    --contrast: rgb(17, 64, 3);
+    --contrast2: rgba(255, 255, 255, 0.5);
+    --text: gray;
+    --text2: rgba(255, 255, 255, 0.7);
+    --logo-blur-factor: 2.0;
+    --logo-offset-factor: 0.02;
+    --movie-detail-title: 'Orbitron', sans-serif;
+
+    background-image: $-bg, linear-gradient(to right, white, black, white);
+    background-blend-mode: color-burn;
+
+    button.btn:not(:disabled) {
+      background-color:  var(--primary);
+      border-color:  var(--primary);
+      &:hover {
+        background-color: white;
+        span {
+          color: var(--primary);
+        }
+      }
+    }
+
+    .loading-container > .loading > i {
+      background-color: var(--primary);
+    }
+
+    .badge {
+      background-color: white;
+      color: black;
+    }
+  }
+}

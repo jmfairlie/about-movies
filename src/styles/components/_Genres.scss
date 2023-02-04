@@ -1,0 +1,16 @@
+div.genres {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  padding: 2vh 0;
+
+  div.genre {
+    border-radius: 5px;
+    font-family: 'Barlow Condensed', sans-serif;
+    color: white;
+    font-size: small;
+    font-weight: bold;
+    background-color: var(--primary);
+    padding: 0 10px;
+  }
+}

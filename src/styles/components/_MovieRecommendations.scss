@@ -1,0 +1,36 @@
+.movie-recommendations {
+  position: relative;
+  height: 100%;
+  .recommendations-title {
+    color: var(--primary);
+    text-align: left;
+    font-weight: bold;
+    padding-bottom: 10px;
+  }
+
+ .recommendations-container {
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  .recommendation-image {
+    height: 100%;
+    width: 380px;
+    background-size: cover;
+    cursor: pointer;
+    justify-content: flex-end;
+
+    .info {
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      background-color: rgba(black, 70%);
+      color: white;
+      font-size: smaller;
+
+      .rating {
+        --rating-font-size: 10px;
+      }
+    }
+  }
+ }
+}

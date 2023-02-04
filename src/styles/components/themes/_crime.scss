@@ -1,0 +1,38 @@
+
+
+$-bg: url('../assets/crime.jpg');
+
+@mixin content {
+  &.crime {
+    --primary: #b6b600;
+    --contrast: #7a7600;
+    --contrast2: rgba(0,0,0, 0.6);
+    --text: gray;
+    --text2: rgba(0, 0, 0, 0.9);
+    --movie-detail-title: 'Fredoka One', 'cursive';
+    --logo-offset-factor: 0.02;
+
+    background-image: $-bg, linear-gradient(to right, transparent, transparent, transparent, white, white, white, rgba(white, 0.7), transparent);
+    background-blend-mode: overlay;
+
+    .movie-details--description {
+      --rating-fill: var(--contrast);
+      --rating-stroke: var(--rating-fill);
+    }
+
+    button.btn:not(:disabled) {
+      background-color:  var(--primary);
+      border-color:  var(--primary);
+      &:hover {
+        background-color: white;
+        span {
+          color: var(--primary);
+        }
+      }
+    }
+
+    .loading-container > .loading > i {
+      background-color: var(--primary);
+    }
+  }
+}

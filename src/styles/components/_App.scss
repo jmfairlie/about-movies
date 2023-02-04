@@ -1,0 +1,77 @@
+@use "themes";
+
+$-header-height: var(--header-height);
+
+div.App {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 50px;
+  height: 100vh;
+
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: cover;
+
+  div.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: calc($-header-height * 0.8);
+    padding:calc($-header-height * 0.1);
+
+      .Logo {
+        --shadow: calc(var(--header-height) * var(--logo-offset-factor));
+        font-family: 'Pacifico', 'cursive';
+        color: var(--contrast);
+        font-size: calc(var(--header-height)/ 1.4);
+        text-shadow:  var(--shadow) var(--shadow) calc(var(--shadow) * var(--logo-blur-factor)) var(--text2);
+      }
+  }
+
+  .page {
+    position: relative;
+    height: calc(100vh - $-header-height);
+  }
+
+  .page-enter {
+    opacity: 0;
+  }
+
+  .page-enter-active {
+    opacity: 1;
+    transition: opacity var(--route-transition-delay) ease ;
+  }
+
+  .page-exit {
+    opacity: 1;
+  }
+
+  .page-exit-active {
+    opacity: 0;
+    transition: opacity var(--route-transition-delay) ease-out;
+  }
+
+  div.carousels {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .rating {
+    & > .icon-box {
+      & > svg {
+        stroke: var(--rating-stroke);
+      }
+
+      &.hovered > svg {
+        fill: var(--rating-fill);
+        stroke: none;
+      }
+    }
+  }
+
+  @include themes.content;
+}

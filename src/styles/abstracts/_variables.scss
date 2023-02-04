@@ -1,0 +1,27 @@
+  :root {
+  --primary: #202c5c;
+  --contrast: lightblue;
+  --contrast2: aliceblue;
+  --contrast3: #87c1a3;
+  --hilite: red;
+  --hilite2: yellow;
+  --hilite3: lightgreen;
+  --error: lightpink;
+  --text: rgba(black, 0.5);
+  --text2: black;
+  --rating-fill:  #FFD700;
+  --rating-stroke:  var(--rating-fill);
+
+  --font-dim: 16;
+  --font-size: calc(var(--font-dim)*1px);
+  --poster-dim: var(--font-dim)*4;
+  --poster-size: calc(var(--poster-dim)*1px);
+  --item-padding-dim: 5;
+  --item-padding: calc(var(--item-padding-dim)* 1px);
+  --route-transition-delay: 300ms;
+  --header-height: 10vh;
+  --logo-blur-factor: 2.0;
+  --logo-offset-factor: 0.05;
+  --movie-detail-title: 'Roboto', sans-serif;
+  --images-folder: '/';
+}

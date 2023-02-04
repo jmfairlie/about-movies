@@ -1,0 +1,36 @@
+
+$-bg: url('../assets/romance.jpg');
+
+@mixin content {
+  &.romance {
+    --primary: #c10000;
+    --contrast: darkred;
+    --contrast2: rgb(199, 150, 158);
+    --text: gray;
+    --text2: rgba(0, 0, 0, 0.8);
+    --movie-detail-title: 'Caveat', 'cursive';
+
+    background-image: $-bg, linear-gradient(to right, transparent, transparent, pink, rgba(white, 0.8), rgba(white, 0.9), rgba(white, 0.1));
+    background-blend-mode: overlay;
+
+    .movie-details--description {
+      --rating-fill: var(--contrast);
+      --rating-stroke: var(--rating-fill);
+    }
+
+    button.btn:not(:disabled) {
+      background-color:  var(--primary);
+      border-color:  var(--primary);
+      &:hover {
+        background-color: white;
+        span {
+          color: var(--primary);
+        }
+      }
+    }
+
+    .loading-container > .loading > i {
+      background-color: var(--primary);
+    }
+  }
+}

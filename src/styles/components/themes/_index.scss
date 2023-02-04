@@ -1,0 +1,9 @@
+@use "war";
+@use "crime";
+@use "romance";
+
+@mixin content {
+  @include war.content;
+  @include crime.content;
+  @include romance.content;
+}

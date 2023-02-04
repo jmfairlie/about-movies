@@ -1,0 +1,10 @@
+.cart-item {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding: 5px 0;
+  gap:10px;
+  .name {
+    font-weight: bold;
+  }
+}
